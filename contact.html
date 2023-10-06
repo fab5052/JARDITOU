@@ -5,98 +5,98 @@
     <!-- Encodage UTF-8 conçu pour coder l'ensemble des caractères -->
     <meta charset="UTF-8">
     <!-- Permet d'indiquer comment le navigateur doit afficher la page sur différents appareils -->
-    <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit="no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JARDITOU</title>
 
     <!-- CSS Files Links -->
-    <link rel="stylesheet" href="stylesheet/Jarditou.css">
+    <link rel="stylesheet" href="stylesheet/Jarditou.css">    
 </head>   
 
 <body>
+
   <header>
  
     <img class="entete_g" src="assets/img/jarditou_logo.png" alt="logo_g">
-    <h1><p class="slogan" >Tout le jardin</p></h1>
+    <h1 class="slogan">Tout le jardin</h1>
     <img class="entete_d" src="assets/img/jarditou_logo_dr.png" alt="logo_d">
 
   </header>
-
-      <nav> <!-- Menu de Navigation -->
-        
-        <ul class="nav">
-            <a href="index.html">Accueil</a>
-            <a href="tableau.html">Tableau</a>
-            <a href="contact.html">Contacts</a>
-        </ul>
-
-      </nav>
   
-      
-    <div class="banniere">
+  <nav class="nav"> <!-- Menu de Navigation -->
+      <a href="index.html">Accueil</a>
+      <a href="tableau.html">Tableau</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+   
+  <div class="banniere">
       <img class="promo" src="assets/img/promotion.jpg" alt="promotion">  
       <img class="body_gif" src="assets/img/GIF.gif" alt="logo_gif">
-    </div>
+  </div>
      
 <main>
- <form>
-  <action="http://bienvu.net/script.php" method="post" id="formulaire">
+  <br class="espace">
+ <form action="http://bienvu.net/script.php" method="post" id="formulaire">
 
-<p>
-  <span aria-label="required">*  Ces zones sont obligatoires </span><br></br>
-</p>
+  <h3>*  Ces zones sont obligatoires</h3>
+
 <fieldset>
-  <legend>Vos coordonnées</legend><br></br>
+  <legend>Vos coordonnées</legend>
    <label for="nom">Votre nom*:</label>
-   <input type="text" name="nom" id="formulaire" size="30" maxlength="30"><br></br>
+   <input type="text" name="nom" id="nom" size="30" maxlength="30"><br>
 
    <label for="nom">Votre prénom*:</label>
-   <input type="text" name="nom" id="formulaire" size="30" maxlength="30"><br></br>
+   <input type="text" name="nom" id="prenom" size="30" maxlength="30"><br>
   
    <label for="nom">Sexe*:&nbsp;</label>  
-  </main> <input id="inlineRadio1" type="radio" name="optradio">
-    <label for="Sexe">Féminin</label>
-    <input id="inlineRadio2" type="radio" name="optradio">
-    <label for="Sexe1">Masculin</label><br></br>
 
-    <label for="date">Date de naissance*:</label>
-    <input type="date" name="ddn" id="date"><br></br>
+   <label for="nom">Féminin</label>
+   <input id="inlineRadio1" type="radio" name="optradio">
 
-    <label for="nom">Code postal*:</label>
-    <input type="text" name="nom" id="formulaire" size="30" maxlength="30"><br></br>
+   <label for="nom">Masculin</label>
+   <input id="inlineRadio2" type="radio" name="optradio"><br>
+
+   <label for="date">Date de naissance*:</label>
+   <input type="date" name="ddn" id="date"><br>
+
+   <label for="CodePostal">Code postal*:</label>
+   <input type="text" name="nom" id="CodePostal" size="30" maxlength="30"><br>
  
-    <label for="nom">Adresse:</label>
-    <input type="text" name="nom" id="formulaire" size="30" maxlength="30"><br></br>
+   <label for="Adresse">Adresse:</label>
+   <input type="text" name="nom" id="Adresse" size="30" maxlength="30"><br>
 
-    <label for="nom">Ville:</label>
-    <input type="text" name="nom" id="formulaire" size="30" maxlength="30"><br></br>
+   <label for="Ville">Ville:</label>
+   <input type="text" name="nom" id="Ville" size="30" maxlength="30"><br>
 
-    <label for="nom">Email*:</label> 
-    <input type="text" name="nom" id="formulaire" size="30" maxlength="30" value="dave.loper@afpa.fr"><br></br>
- </fieldset>
-</section><br></br>
-
- <fieldset>
-  <legend>Votre demande</legend><br></br>
+   <label for="Email">Email*:</label> 
+   <input type="text" name="nom" id="Email" size="30" maxlength="30" value="dave.loper@afpa.fr">
+</fieldset>
+<fieldset>
+  <legend>Votre demande</legend>
 
   <label for="nom">Sujet*:</label>
 
-  <select id="Veuillez séléctionner un sujet">
+  <select>
     <option value="-">Veuillez séléctionner un sujet</option>
     <option value="Commandes">Commandes</option>
     <option value="Question sur un produit">Questionsur un produit</option>
     <option value="Réclamatiuons">Réclamations</option>
     <option value="Autres">Autres</option>
-  </select><br></br>
-  <label for="msg">Votre question*:</label>
-  <textarea name="user_message" id="formulaire" rows="5" cols="50"></textarea><br></br>
+  </select><br>
+
+  <label for="question">Votre question*:</label>
+  <textarea name="text" id="question" rows="5" cols="50"></textarea><br>
   
   <input type="checkbox" name="formulaire" value="*J'accepte le traitement de ce formulaire">*J'accepte le traitement de ce formulaire
 
- </fieldset><br></br>
+ </fieldset><br>
+  
+  <input type="button" name="Envoyer" size="30" value="Envoyer">
+
+  <input type="button" name="Envoyer" size="30" value="Annuler">
+
 </form>
 
+</main>
 
 <footer>
    
