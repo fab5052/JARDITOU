@@ -34,8 +34,8 @@
   </div>
      
 <main>
-  <br class="espace">
- <form action="http://bienvu.net/script.php" method="post" id="formulaire">
+
+ <form action="http://bienvu.net/script.php"  method="post" id="formulaire"></form>
 
   <h3>*  Ces zones sont obligatoires</h3>
 
@@ -68,8 +68,9 @@
    <input type="text" name="nom" id="Ville" size="30" maxlength="30"><br>
 
    <label for="Email">Email*:</label> 
-   <input type="text" name="nom" id="Email" size="30" maxlength="30" value="dave.loper@afpa.fr">
+   <input type="text" name="nom" id="Email" size="30" maxlength="30" placeholder="dave.loper@afpa.fr"><br>
 </fieldset>
+
 <fieldset>
   <legend>Votre demande</legend>
 
@@ -90,11 +91,8 @@
 
  </fieldset><br>
   
-  <input type="button" name="Envoyer" size="30" value="Envoyer">
-
-  <input type="button" name="Envoyer" size="30" value="Annuler">
-
-</form>
+  <button>Envoyer</button> 
+  <button>Annuler</button>
 
 </main>
 

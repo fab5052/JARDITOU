@@ -6,11 +6,16 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(18, 18, 16);
+    font-weight: 10%;
+    color: rgb(7, 7, 7);
     background-color: rgb(234, 229, 226);
     margin: auto;
-    -webkit-text-stroke: 1px rgb(90, 84, 84);
+    -webkit-text-stroke: 1px rgb(11, 10, 10);
     line-height: 200%;
+    letter-spacing: 1px;
+    overflow-x: auto;
+    scrollbar-color: #151414 #201c29;
+    -webkit-overflow-scrolling: touch; 
 }
 
 .entete_g  {
@@ -83,7 +88,7 @@ img {
 }
 
 form {
-    margin: 0
+    margin-left: 2%;
 }
 
 legend {
@@ -102,6 +107,7 @@ table {
 tr {
     color:#666;
     background: #e2dfdf;
+    letter-spacing: 2px;
 }
 
 th,td {
@@ -118,13 +124,26 @@ th,td {
     background: #b6adad;
 }
 
-body {
-    margin: 5px;
-    overflow-x: auto;
-    scrollbar-color: #151414 #201c29;
-    -webkit-overflow-scrolling: touch;
-    min-width: 0      
+label {
+    height: 30px;
 }
 
+button {
+    width: 100px;
+    height: 25px;
+    display: flexbox;
+    margin-left: 1.5em;
+    margin-bottom: 3em;    
+}
 
+button:hover {
+    color: #666;
+}
 
+#text {
+    margin: 4px;
+}
+
+h2,h3,p {
+    margin-left: 10px;
+}
