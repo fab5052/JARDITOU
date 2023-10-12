@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <!-- Début de la balise head -->
+
 <head>
-    <!-- Encodage UTF-8 conçu pour coder l'ensemble des caractères -->
-    <meta charset="UTF-8">
-    <!-- Permet d'indiquer comment le navigateur doit afficher la page sur différents appareils -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JARDITOU</title>
-    <!-- CSS Files Links -->
-    <link href="css/Jarditou.css" rel="stylesheet">
+  <!-- Encodage UTF-8 conçu pour coder l'ensemble des caractères -->
+  <meta charset="UTF-8">
+  <!-- Permet d'indiquer comment le navigateur doit afficher la page sur différents appareils -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARDITOU</title>
+  <!-- CSS Files Links -->
+  <link href="css/Jarditou.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,19 +17,20 @@
   <header>
 
     <img class="entete_g" src="assets/img/jarditou_logo.png" alt="logo_g">
-    <h1 class="slogan">Tout le jardin</h1>
+    <p class="titre">Tout le jardin</p>
     <img class="entete_d" src="assets/img/jarditou_logo_dr.png" alt="logo_d">
-
   </header>
 
   <nav> <!-- Menu de Navigation -->
-    <a href="index.html">Accueil</a>
-    <a href="tableau.html">Tableau</a>
-    <a href="contact.html">Contacts</a>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="tableau.html">Tableau</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+    </ul>
   </nav>
 
-  <div class="banniere">
-    <img class="promo" src="assets/img/promotion.jpg" alt="promotion">
+  <div>
+    <a href="tableau.html"><img class="promo" src="assets/img/promotion.png" alt="promotion"></a>
     <img class="body_gif" src="assets/img/GIF.gif" alt="logo_gif">
   </div>
 
@@ -36,38 +38,41 @@
 
     <form action="http://bienvu.net/script.php" method="post" id="formulaire"></form>
 
+    <h1 class="accueil">FORMULAIRE</h1>
+    <hr>
+
     <h3>* Ces zones sont obligatoires</h3>
 
     <fieldset>
       <legend>Vos coordonnées</legend>
       <label for="nom">Votre nom*:</label>
-      <input type="text" name="nom" id="nom" size="30" maxlength="30"><br>
+      <input type="text" name="nom" id="nom" required size="30" maxlength="30"><br>
 
-      <label for="nom">Votre prénom*:</label>
-      <input type="text" name="nom" id="prenom" size="30" maxlength="30"><br>
+      <label for="prénom">Votre prénom*:</label>
+      <input type="text" name="prénom" id="prénom" required size="30" maxlength="30"><br>
 
       <label for="nom">Sexe*:&nbsp;</label>
 
       <label for="nom">Féminin</label>
-      <input id="inlineRadio1" type="radio" name="optradio">
+      <input id="inlineRadio1" type="radio" name="optradio" required>
 
       <label for="nom">Masculin</label>
-      <input id="inlineRadio2" type="radio" name="optradio"><br>
+      <input id="inlineRadio2" type="radio" name="optradio" required><br>
 
-      <label for="date">Date de naissance*:</label>
-      <input type="date" name="ddn" id="date"><br>
+      <label for="ddn">Date de naissance*:</label>
+      <input type="date" name="ddn" id="ddn" required><br>
 
       <label for="CodePostal">Code postal*:</label>
-      <input type="text" name="nom" id="CodePostal" size="30" maxlength="30"><br>
+      <input type="text" name="CodePostal" id="CodePostal" required size="30" maxlength="30"><br>
 
       <label for="Adresse">Adresse:</label>
-      <input type="text" name="nom" id="Adresse" size="30" maxlength="30"><br>
+      <input type="text" name="Adresse" id="Adresse" required size="30" maxlength="30"><br>
 
       <label for="Ville">Ville:</label>
-      <input type="text" name="nom" id="Ville" size="30" maxlength="30"><br>
+      <input type="text" name="Ville" id="Ville" required size="30" maxlength="30"><br>
 
       <label for="Email">Email*:</label>
-      <input type="text" name="nom" id="Email" size="30" maxlength="30" placeholder="dave.loper@afpa.fr"><br>
+      <input type="text" name="Email" id="Email" size="30" maxlength="30" placeholder="dave.loper@afpa.fr"><br>
     </fieldset>
 
     <fieldset>
@@ -76,12 +81,12 @@
       <label for="nom">Sujet*:</label>
 
       <select>
-        <option value="-">Veuillez séléctionner un sujet</option>
+        <option selected disabled value="Veuillez">Veuillez séléctionner un sujet</option>
         <option value="Commandes">Commandes</option>
-        <option value="Question sur un produit">Questionsur un produit</option>
+        <option value="Question sur un produit">Question sur un produit</option>
         <option value="Réclamatiuons">Réclamations</option>
         <option value="Autres">Autres</option>
-      </select><br>
+      </select><br><br>
 
       <label for="question">Votre question*:</label>
       <textarea name="text" id="question" rows="5" cols="50"></textarea><br>
@@ -93,21 +98,20 @@
 
 
     <input type="submit" class="button" value="Envoyer">
-    <input type="submit" class="button" value="Annuler">
+    <input type="reset" class="button" value="Annuler">
 
-
+  </main>
 
   <footer>
     <nav> <!-- Menu de Navigation -->
-    
-      <a href="index.html">Mentions légales</a>
-      <a href="tableau.html">Horaires</a>
-      <a href="index.html">Plan du site</a>
+      <ul>
+        <li><a href="index.html">Mentions légales</a></li>
+        <li><a href="tableau.html">Horaires</a></li>
+        <li><a href="index.html">Plan du site</a></li>
+      </ul>
     </nav>
 
   </footer>
-
-</main>
 
 </body>
 

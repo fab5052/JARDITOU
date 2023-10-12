@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <!-- Début de la balise head -->
+
 <head>
     <!-- Encodage UTF-8 conçu pour coder l'ensemble des caractères -->
     <meta charset="UTF-8">
@@ -14,77 +15,88 @@
 <body>
 
     <header>
+
         <img class="entete_g" src="assets/img/jarditou_logo.png" alt="logo_g">
-        <h1 class="slogan">Tout le jardin</h1>
+        <p class="titre">Tout le jardin</p>
         <img class="entete_d" src="assets/img/jarditou_logo_dr.png" alt="logo_d">
     </header>
 
     <nav> <!-- Menu de Navigation -->
-        <a href="index.html">Accueil</a>
-        <a href="tableau.html">Tableau</a>
-        <a href="contact.html">Contacts</a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
     </nav>
 
-    <div class="banniere">
-        <img class="promo" src="assets/img/promotion.jpg" alt="promotion">
+    <div>
+        <a href="tableau.html"><img class="promo" src="assets/img/promotion.png" alt="promotion"></a>
         <img class="body_gif" src="assets/img/GIF.gif" alt="logo_gif">
     </div>
 
     <main>
         <table>
-            <tr>
-                <th class="entete_tab">Photo</th>
-                <th class="entete_tab">ID</th>
-                <th class="entete_tab">Categories</th>
-                <th class="entete_tab">Libellé</th>
-                <th class="entete_tab">Prix</th>
-                <th class="entete_tab">Couleur</th>
-            </tr>
-
-            <tr>
-                <td> <img src="assets/img/7.png" alt="barbecues"> </td>
-                <td>7</td>
-                <td>Barbecues</td>
-                <td>Aramis</td>
-                <td>110.00€</td>
-                <td>Brun</td>
-            </tr>
-
-            <tr>
-                <td> <img src="assets/img/8.png" alt="barbecues"></td>
-                <td>8</td>
-                <td>Barbecues</td>
-                <td>Athos</td>
-                <td>249.00€</td>
-                <td>Noir</td>
-            </tr>
-
-            <tr>
-                <td> <img src="assets/img/11.png" alt="brouettes"></td>
-                <td>11</td>
-                <td>Brouettes</td>
-                <td>Clatronic</td>
-                <td>135.90€</td>
-                <td>Chrome</td>
-            </tr>
-
-            <tr>
-                <td> <img src="assets/img/12.png" alt="barbecues"></td>
-                <td>12</td>
-                <td>Barbecues</td>
-                <td>Camping</td>
-                <td>88.00€</td>
-                <td>Noir</td>
-            </tr>
-
-            <tr>
-                <td> <img src="assets/img/13.png" alt="brouettes"></td>
-                <td>13</td>
-                <td>Brouettes</td>
-                <td>Green</td>
-                <td>49.00€</td>
-                <td>Noir</td>
-            </tr>
+            <caption>TABLEAU</caption>
+            <thead>
+                <tr>
+                    <th class="entete_tab">Photo</th>
+                    <th class="entete_tab">ID</th>
+                    <th class="entete_tab">Categories</th>
+                    <th class="entete_tab">Libellé</th>
+                    <th class="entete_tab">Prix</th>
+                    <th class="entete_tab">Couleur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="assets/img/7.png" alt="barbecues"></td>
+                    <td>7</td>
+                    <td>Barbecues</td>
+                    <td>Aramis</td>
+                    <td>110.00€</td>
+                    <td>Brun</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><img src="assets/img/8.png" alt="barbecues"></td>
+                    <td>8</td>
+                    <td>Barbecues</td>
+                    <td>Athos</td>
+                    <td>249.00€</td>
+                    <td>Noir</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <img src="assets/img/11.png" alt="brouettes"></td>
+                    <td>11</td>
+                    <td>Brouettes</td>
+                    <td>Clatronic</td>
+                    <td>135.90€</td>
+                    <td>Chrome</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <img src="assets/img/12.png" alt="barbecues"></td>
+                    <td>12</td>
+                    <td>Barbecues</td>
+                    <td>Camping</td>
+                    <td>88.00€</td>
+                    <td>Noir</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <img src="assets/img/13.png" alt="brouettes"></td>
+                    <td>13</td>
+                    <td>Brouettes</td>
+                    <td>Green</td>
+                    <td>49.00€</td>
+                    <td>Noir</td>
+                </tr>
+            </tbody>
 
         </table>
 
@@ -93,10 +105,13 @@
     <footer>
 
         <nav> <!-- Menu de Navigation -->
-            <a href="index.html">Mentions légales</a>
-            <a href="tableau.html">Horaires</a>
-            <a href="index.html">Plan du site</a>
+            <ul>
+                <li><a href="index.html">Mentions légales</a></li>
+                <li><a href="tableau.html">Horaires</a></li>
+                <li><a href="index.html">Plan du site</a></li>
+            </ul>
         </nav>
+
 
     </footer>
 
